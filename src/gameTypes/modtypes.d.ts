@@ -1,4 +1,4 @@
-namespace Modding {
+export namespace Modding {
   type ModId = number;
 
   /** mod.io typedefs */
