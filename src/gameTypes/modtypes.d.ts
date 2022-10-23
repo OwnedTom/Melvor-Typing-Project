@@ -651,4 +651,4 @@ interface ClassHandle {
   prototype: Record<string | number | symbol, any>;
 }
 
-type ClassMethod<C extends ClassHandle> = {[M in keyof C['prototype']]-?: C['prototype'][M] extends Function ? M : never}[keyof C['prototype']];
+type ClassMethod<C extends ClassHandle> = {[M in keyof C]-?: C[M] extends Function ? M : never}[keyof C];

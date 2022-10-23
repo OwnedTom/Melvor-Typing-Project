@@ -1,3 +1,6 @@
 declare global {
-    const Skill: Skill<BaseSkillData>
+    const Skill: AnySkill
+    const game: Game
 }
+
+export {}
